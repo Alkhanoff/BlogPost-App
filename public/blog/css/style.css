@@ -1,0 +1,176 @@
+body{
+    background-color: #f1f1f1;
+}
+.acolor{
+    color: #44519e;
+}
+.reviews{
+    float: right;
+}
+.wrapper{
+    background: url("../images/asoha.png");
+    height: 110px;
+    -webkit-box-shadow: inset -1px 2px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset -1px 2px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: inset -1px 2px 14px 0px rgba(0,0,0,0.75);
+}
+.textstyle{
+    color: #44519e;
+    font-size: 24px;
+}
+.headtext{
+    margin-top: 55px;
+}
+.loginsignup{
+    margin-top: 55px;
+    float: right;
+}
+.box-wrapper{
+    background: #ffffff;
+    margin-bottom: 30px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+.search-form {
+    position: relative;
+}
+.search-form > button {
+    background: transparent none repeat scroll 0 0;
+    border: medium none;
+    color: #737272;
+    font-size: 15px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s;
+    padding: 0;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-search:before {
+    content: "\f002";
+}
+.search-form input {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid transparent;
+    height: 50px;
+    letter-spacing: 2px;
+    padding: 0 30px 0 20px;
+    width: 100%;
+}
+.categories-title{
+    border-bottom: 1px solid #eee;
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    padding-left: 20px;
+}
+.categories-list{
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.categories-list a {
+    color: #333333;
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    height: 40px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ececec;
+}
+.posts .card{
+    margin-top: 40px;
+    width: 300px;
+    height: 410px;
+}
+.card {
+    text-decoration: none;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+.card:hover {
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    transform: scale(1.03);
+    -webkit-box-shadow: 0px 6px 17px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 17px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 17px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+.mybtn {
+    background: transparent;
+    border-color: #007bff;
+    border-radius: 0;
+    color: #007bff;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 150ms ease-in-out;
+}
+.mybtn:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: #007bff;
+    z-index: -1;
+    transition: width 150ms ease-in-out;
+}
+.mybtn:hover {
+    color: #fff;
+}
+.mybtn:hover:after {
+    width: 110%;
+}
+.underline::before {
+    content: "";
+    position: absolute;
+    left: 26%;
+    width: 50%;
+    height: 2px;
+    top: 58px;
+    background-color: #44519e80;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.card-img-top {
+    width: 287px;
+    height: 173px;
+}
+#imagecss{
+    -webkit-box-shadow: 0px 7px 29px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 7px 29px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 7px 29px -4px rgba(0,0,0,0.75);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .loginsignup {
+        margin-top: 22px;
+        float: right;
+    }
+}

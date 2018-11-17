@@ -1,0 +1,97 @@
+html,
+body {
+
+  height: 100%;
+}
+
+body {
+    text-align: center;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+    background-image: linear-gradient(120deg, rgb(132, 250, 176) 0%, rgb(143, 211, 244) 100%);
+}
+
+.form-signin {
+  transition: all 3s;
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+  background: white;
+
+  -webkit-box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.75);
+
+
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+.form-signin:hover{
+      /* transition: box-shadow 0.3s ease-in-out; */
+  -webkit-box-shadow: inset 0px 3px 15px -1px rgba(0,0,0,0.3);
+-moz-box-shadow: inset 0px 3px 15px -1px rgba(0,0,0,0.3);
+box-shadow: inset 0px 3px 15px -1px rgba(0,0,0,0.3);
+}
+
+.mybtn {
+    background: transparent;
+  border-color: #007bff;
+  border-radius: 0;
+  color: #007bff;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 150ms ease-in-out;
+}
+.mybtn:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: #007bff;
+  z-index: -1;
+  transition: width 150ms ease-in-out;
+}
+.mybtn:hover {
+  color: #fff;
+}
+.mybtn:hover:after {
+  width: 110%;
+}
